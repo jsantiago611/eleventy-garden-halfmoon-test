@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true"
+      data-sidebar-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+
+<!-- Documentation section id (hidden) -->
+<input type="hidden" name="docs-section-id" id="docs-section-id" value="{{title}}">
+
+<!-- Page wrapper start -->
+<div class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom">
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+        <!-- Reference: https://www.gethalfmoon.com/docs/navbar -->
+        <a href="{{ '/' | url }}" class="page-header__logo" title="Go home">
+            <img src="{{ '/assets/' | append: site.brand-icon | url }}" alt="" width="60">
+        </a>
+        <ul class="navbar-nav d-none d-md-flex">
+            <li class="nav-item">
+                <a href="{{ '/' | url }}" class="nav-link">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <div class="sidebar">
+        {% include sidebar.html %}
+    </div>
+    <!-- Content wrapper start -->
+    <div class="content-wrapper">
+        <!--
+          Add your page's main content here
+          Examples:
+          1. https://www.gethalfmoon.com/docs/content-and-cards/#building-a-page
+          2. https://www.gethalfmoon.com/docs/grid-system/#building-a-dashboard
+        -->
+        {{content}}
+
+    </div>
+    <!-- Content wrapper end -->
+    <nav class="navbar navbar-fixed-bottom justify-content-center">
+        <a href="{{site.github}}" class="navbar-link">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+    </nav>
+
+
+</div>
+<!-- Page wrapper end -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+<script src="{{ '/assets/backlink.js' | url }}"></script>
+</body>
+</html>

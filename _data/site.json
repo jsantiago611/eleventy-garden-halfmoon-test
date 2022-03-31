@@ -1,0 +1,9 @@
+{
+    "title": "The Notes",
+    "desc": "1-2 sentences about the site (optional)",
+    "author": "Oliver Tosky",
+    "baseurl": "https://eleventy-garden.netlify.app",
+    "github": "https://github.com/otosky/eleventy-garden-halfmoon",
+    "brand-icon": "tree.png",
+    "favicon": "favicon.ico"
+}
